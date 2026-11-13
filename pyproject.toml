@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hd-memcore"
+version = "0.1.0"
+description = "Dependency-free context re-assembly layer: raw turns are stored forever, memories are derived and recomputable, context is re-assembled per turn under a token budget."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "hd" }]
+keywords = ["llm", "context", "memory", "long-conversation", "sqlite"]
+dependencies = []
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Text Processing :: Linguistic",
+]
+
+[tool.setuptools]
+packages = ["memcore"]
